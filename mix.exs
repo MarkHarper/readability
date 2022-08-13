@@ -2,7 +2,7 @@ defmodule Readability.Mixfile do
   @moduledoc """
   """
 
-  @version "0.6.0"
+  @version "0.5.0"
   @description """
   A fork of the Readability library for extracting and curating articles.
   """
@@ -13,7 +13,7 @@ defmodule Readability.Mixfile do
     [
       app: :readability2,
       version: @version,
-      elixir: "~> 1.9",
+      elixir: "~> 1.5",
       description: @description,
       package: package(),
       build_embedded: Mix.env() == :prod,
@@ -29,14 +29,23 @@ defmodule Readability.Mixfile do
     [applications: [:logger, :floki, :httpoison, :codepagex]]
   end
 
+  # Dependencies can be Hex packages:
+  #
+  #   {:mydep, "~> 0.3.0"}
+  #
+  # Or git/path repositories:
+  #
+  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
+  #
+  # Type "mix help deps" for more examples and options
   defp deps do
     [
+      {:floki, "~> 0.30.1"},
+      {:httpoison, "~> 1.8.0"},
       {:codepagex, "~> 0.1.6"},
-      {:credo, "~> 1.6.6", only: [:dev, :test]},
-      {:dialyxir, "~> 1.2.0", only: [:dev]},
-      {:ex_doc, "~> 0.28.4", only: :dev},
-      {:floki, "~> 0.33.1"},
-      {:httpoison, "~> 1.8.1"},
+      {:ex_doc, "~> 0.24.2", only: :dev},
+      {:credo, "~> 1.5.6", only: [:dev, :test]},
+      {:dialyxir, "~> 1.1.0", only: [:dev]},
       {:mock, "~> 0.3.7", only: :test}
     ]
   end
