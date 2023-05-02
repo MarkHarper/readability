@@ -14,7 +14,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 ```elixir
 def deps do
-  [{:readability2, "~> 0.4"}]
+  [{:readability2, "~> 0.6.1"}]
 end
 ```
 
@@ -26,7 +26,7 @@ def application do
 end
 ```
 
-Note: Readability requires Elixir 1.3 or higher.
+Note: Readability requires Elixir 1.9 or higher.
 
 ## Usage
 
