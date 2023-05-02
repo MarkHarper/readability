@@ -32,11 +32,11 @@ defmodule Readability.Mixfile do
   defp deps do
     [
       {:codepagex, "~> 0.1.6"},
-      {:credo, "~> 1.6.6", only: [:dev, :test]},
-      {:dialyxir, "~> 1.2.0", only: [:dev]},
-      {:ex_doc, "~> 0.28.4", only: :dev},
-      {:floki, "~> 0.33.1"},
-      {:httpoison, "~> 1.8.1"},
+      {:credo, "~> 1.6", only: [:dev, :test]},
+      {:dialyxir, "~> 1.2", only: [:dev]},
+      {:ex_doc, "~> 0.29", only: :dev},
+      {:floki, "~> 0.34"},
+      {:httpoison, "~> 1.8"},
       {:mock, "~> 0.3.7", only: :test}
     ]
   end
