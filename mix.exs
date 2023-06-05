@@ -36,7 +36,7 @@ defmodule Readability.Mixfile do
       {:dialyxir, "~> 1.2.0", only: [:dev]},
       {:ex_doc, "~> 0.28.4", only: :dev},
       {:floki, "~> 0.33.1"},
-      {:httpoison, "~> 1.8.1"},
+      {:httpoison, "~> 2.1.0"},
       {:mock, "~> 0.3.7", only: :test}
     ]
   end
