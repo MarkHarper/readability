@@ -33,7 +33,7 @@ defmodule Readability.Mixfile do
     [
       {:codepagex, "~> 0.1.6"},
       {:credo, "~> 1.7.0", only: [:dev, :test]},
-      {:dialyxir, "~> 1.3.0", only: [:dev]},
+      {:dialyxir, "~> 1.4.0", only: [:dev]},
       {:ex_doc, "~> 0.29.4", only: :dev},
       {:floki, "~> 0.34.2"},
       {:httpoison, "~> 2.1.0"},
